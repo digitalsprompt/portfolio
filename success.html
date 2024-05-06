@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+    <title>Oluwafemi Arokoola</title>
+</head>
+
+<body>
+    <button class="sidebar-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav class="sidebar">
+        <div>
+            <a href="index.html" class="brand">
+                <span class="square"></span>
+                <span class="name">Oluwafemi Arokoola</span>
+                <span class="job-title">Website Developer</span>
+            </a>
+            <div class="links">
+                <a href="index.html" class="active">About Me</a>
+                <a href="resume.html">Resume</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="contact-info">
+                <div>
+                    <h3>Call</h3>
+                    <p>08130573122</p>
+                </div>
+                <div>
+                    <h3>Write</h3>
+                    <p>arokoolafemi@outlook.com</p>
+                </div>
+                <div>
+                    <h3>Follow</h3>
+                    <div class="sidebar-social">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 by Oluwafemi Arokoola</p>
+        </div>
+    </nav>
+
+    <main class="success">
+        <div class="card">
+            <h2><span class="square"></span>Thank You!</h2>
+            <p>
+                We will make sure to answer all of your questions as soon as possible.
+                untill then you can 
+                <a href="index.html">Return to the main page.</a>
+            </p>
+        </div>
+    </main>
+
+
+
+    <!-- JavaScript -->
+<script>
+    // Get the sidebar and sidebar button from the DOM
+    const sidebar = document.querySelector(".sidebar");
+    const sidebarBtn = document.querySelector(".sidebar-btn")
+
+    // Add click event to the sidebar button
+    sidebarBtn.addEventListener("click", () => {
+        // Toogle sidebar button icon
+        sidebarBtn.firstElementChild.classList.toggle("fa-times");
+        // Toggle sidebar open class on the sidebar
+        sidebar.classList.toggle("sidebar-open");
+    });
+
+
+</script>
+</body>
+</html>
